@@ -8,26 +8,30 @@
 
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <div class="gameBox flex center spaceBetween wrap">
-        <div id="sym1" class="symbolBox flex center">
-        </div>
-        <div id="sym2" class="symbolBox flex center">
-        </div>
-        <div id="sym3" class="symbolBox flex center">
-        </div>
-        <div id="sym4"class="symbolBox flex center">
-        </div>
-        <div id="sym5"class="symbolBox flex center">
-        </div>
-        <div id="sym6"class="symbolBox flex center">
-        </div>
-        <div id="sym7" class="symbolBox flex center">
-        </div>
-        <div id="sym8" class="symbolBox flex center">
-        </div>
-        <div id="sym9" class="symbolBox flex center">
-        </div>
+
+    <h1>Tic Tac Toe</h1>
+    <div>
+        <h5>Plays:</h5>
+        <p class="plays">0</p>
     </div>
+    <div>
+        <h5>Winner:</h5>
+        <p class="winner">nobody</p>
+    </div>
+    <div class="box">
+        <div onclick="onClick(0)" id="f1" class="field"></div>
+        <div onclick="onClick(1)" id="f2" class="field"></div>
+        <div onclick="onClick(2)" id="f3" class="field"></div>
+        <div onclick="onClick(3)" id="f4" class="field"></div>
+        <div onclick="onClick(4)" id="f5" class="field"></div>
+        <div onclick="onClick(5)" id="f6" class="field"></div>
+        <div onclick="onClick(6)" id="f7" class="field"></div>
+        <div onclick="onClick(7)" id="f8" class="field"></div>
+        <div onclick="onClick(8)" id="f9" class="field"></div>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>

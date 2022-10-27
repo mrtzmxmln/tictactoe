@@ -1,44 +1,53 @@
 :root {
-    --colorBG: #f85e00;
-    --colorBlack: #262322;
-    --colorWhite: #ffffff;
-    --colorBlue: #016FB9;
+    --colorBackground: grey;
+    --colorMain: #ffffff;
+    --colorAccent: green;
 }
 
-.flex {
+body {
+    height: 100vh;
+    width: 100vw;
+
     display: flex;
-}
-
-.column {
     flex-direction: column;
-}
-
-.row {
-    flex-direction: row;
-}
-
-.center {
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
+    background-color: var(--colorMain);
+
 }
 
-.spaceBetween {
-    justify-content:space-between;
-}
+.box {
+    height: 320px;
+    width: 320px;
 
-.wrap {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+
+    background-color: var(--colorBackground);
 }
 
-.gameBox {
-    width: 170px;
-    height: 170px;
-    background-color: var(--colorBlack);
+.field {
+    width: 100px;
+    height: 100px;
+
+    background-color: var(--colorMain);
 }
 
-.symbolBox {
-    height: 50px;
-    width: 50px;
-    background-color: var(--colorWhite);
-    flex-basis: 0 0 50%;
+#f2, #f5, #f8 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#f1, #f2, #f3, #f4, #f5, #f6 {
+    margin-bottom: 10px;
+}
+
+.black {
+    background-color: black;
+}
+
+.green {
+    background-color: green;
 }
