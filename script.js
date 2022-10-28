@@ -48,3 +48,7 @@ function checkWin() {
         winner.innerHTML = "Red";
     } 
 }
+
+function resetGame() {
+    location.reload();
+}

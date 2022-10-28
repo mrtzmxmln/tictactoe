@@ -1,7 +1,7 @@
 :root {
-    --colorBackground: grey;
-    --colorMain: #ffffff;
-    --colorAccent: green;
+    --colorBackground: black;
+    --colorBox: white;
+    --colorText: white;
 }
 
 body {
@@ -13,11 +13,27 @@ body {
     align-items: center;
     justify-content: center;
 
-    background-color: var(--colorMain);
+    color: var(--colorText);
+    background-color: var(--colorBackground);
+
+    font-family: monospace;
 
 }
 
-.box {
+.statsBox {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.statsField {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.gameBox {
     height: 320px;
     width: 320px;
 
@@ -25,14 +41,14 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
 
-    background-color: var(--colorBackground);
+    background-color: var(--colorBox);
 }
 
 .field {
     width: 100px;
     height: 100px;
 
-    background-color: var(--colorMain);
+    background-color: var(--colorBackground);
 }
 
 #f2, #f5, #f8 {

@@ -12,15 +12,21 @@
 <body>
 
     <h1>Tic Tac Toe</h1>
-    <div>
-        <h5>Plays:</h5>
-        <p class="plays">0</p>
+
+    <div class="statsBox">
+
+        <div class="statsField">
+            <p>Plays: </p><p class="plays">0</p>
+        </div>
+
+        <div class="statsField">
+            <p>Winner:</p>
+            <p class="winner">nobody</p>
+        </div>
+
     </div>
-    <div>
-        <h5>Winner:</h5>
-        <p class="winner">nobody</p>
-    </div>
-    <div class="box">
+
+    <div class="gameBox">
         <div onclick="onClick(0)" id="f1" class="field"></div>
         <div onclick="onClick(1)" id="f2" class="field"></div>
         <div onclick="onClick(2)" id="f3" class="field"></div>
@@ -31,6 +37,9 @@
         <div onclick="onClick(7)" id="f8" class="field"></div>
         <div onclick="onClick(8)" id="f9" class="field"></div>
     </div>
+
+
+    <button onclick="resetGame()">Reset</button>
 
     <script src="./script.js"></script>
 </body>
