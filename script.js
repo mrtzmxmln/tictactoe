@@ -11,7 +11,7 @@ function onClick(field) {
         player = 1;
         updateStats();
     } else if(player == 1) {
-        fieldList[field].style.backgroundColor = "green";
+        fieldList[field].style.backgroundColor = "orange";
         player = 0;
         updateStats();
     }
@@ -46,6 +46,30 @@ function checkWin() {
         winner.innerHTML = "Red";
     } else if((fieldList[2].style.backgroundColor == "red") && (fieldList[4].style.backgroundColor == "red") && (fieldList[6].style.backgroundColor == "red")) {
         winner.innerHTML = "Red";
+    }
+
+    /* ORANGE */
+    /* horizontal */
+    if((fieldList[0].style.backgroundColor == "orange") && (fieldList[1].style.backgroundColor == "orange") && (fieldList[2].style.backgroundColor == "orange")) {
+        winner.innerHTML = "Orange";
+    } else if((fieldList[3].style.backgroundColor == "orange") && (fieldList[4].style.backgroundColor == "orange") && (fieldList[5].style.backgroundColor == "orange")) {
+        winner.innerHTML = "orange";
+    } else if((fieldList[6].style.backgroundColor == "orange") && (fieldList[7].style.backgroundColor == "orange") && (fieldList[8].style.backgroundColor == "orange")) {
+        winner.innerHTML = "Orange";
+    } 
+    /* vertikal */
+    else if((fieldList[0].style.backgroundColor == "orange") && (fieldList[3].style.backgroundColor == "orange") && (fieldList[6].style.backgroundColor == "orange")) {
+        winner.innerHTML = "Orange";
+    } else if((fieldList[1].style.backgroundColor == "orange") && (fieldList[4].style.backgroundColor == "orange") && (fieldList[7].style.backgroundColor == "orange")) {
+        winner.innerHTML = "Orange";
+    } else if((fieldList[2].style.backgroundColor == "orange") && (fieldList[5].style.backgroundColor == "orange") && (fieldList[8].style.backgroundColor == "orange")) {
+        winner.innerHTML = "Orange";
+    }
+    /* schräg */
+    else if((fieldList[0].style.backgroundColor == "orange") && (fieldList[4].style.backgroundColor == "orange") && (fieldList[8].style.backgroundColor == "orange")) {
+        winner.innerHTML = "Orange";
+    } else if((fieldList[2].style.backgroundColor == "orange") && (fieldList[4].style.backgroundColor == "orange") && (fieldList[6].style.backgroundColor == "orange")) {
+        winner.innerHTML = "Orange";
     } 
 }
 
