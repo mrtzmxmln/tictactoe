@@ -11,7 +11,9 @@
 
 <body>
 
-    <h1>Tic Tac Toe</h1>
+    <h2>Tic Tac Toe</h2>
+
+    <h1 class="statusMessage"></h1>
 
     <div class="statsBox">
 
@@ -19,12 +21,10 @@
             <p>Plays: </p><p class="plays">0</p>
         </div>
 
-        <div class="statsField">
-            <p>Winner:</p>
-            <p class="winner">nobody</p>
-        </div>
-
     </div>
+
+    <br>
+    <br>
 
     <div class="gameBox">
         <div onclick="onClick(0)" id="f1" class="field"></div>
@@ -38,6 +38,8 @@
         <div onclick="onClick(8)" id="f9" class="field"></div>
     </div>
 
+    <br>
+    <br>
 
     <button onclick="resetGame()">Reset</button>
 
